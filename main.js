@@ -1,10 +1,20 @@
 var divsOnDivsOnDivsYo = [];
 
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 var repeater = function(n) {
   for (var i = 0; i < n; i++) {
     console.log(i);
     divsOnDivsOnDivsYo[i] = document.createElement('div');
     divsOnDivsOnDivsYo[i].style.padding = (1/n);
+    divsOnDivsOnDivsYo[i].style.borderColor = getRandomColor();
     if (i== n-1) {
       document.body.appendChild(divsOnDivsOnDivsYo[i]);
       divsOnDivsOnDivsYo[i].appendChild(divsOnDivsOnDivsYo[i-1])
@@ -13,11 +23,12 @@ var repeater = function(n) {
     } else {
       divsOnDivsOnDivsYo[i].appendChild(divsOnDivsOnDivsYo[i-1]);
     }
-    if (i % 2 == 0) {
-      divsOnDivsOnDivsYo[i].className = "blue";
-    } else {
-      divsOnDivsOnDivsYo[i].className = "orange";
-    }
+    // if (i % 2 == 0) {
+    //   divsOnDivsOnDivsYo[i].className = "blue";
+    // } else {
+    //   divsOnDivsOnDivsYo[i].className = "orange";
+    // }
+
   };
 };
 
