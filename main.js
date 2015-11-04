@@ -15,6 +15,7 @@ var repeater = function(n) {
     divsOnDivsOnDivsYo[i] = document.createElement('div');
     divsOnDivsOnDivsYo[i].style.padding = (1/n);
     divsOnDivsOnDivsYo[i].style.borderColor = getRandomColor();
+    divsOnDivsOnDivsYo[i].style.borderColor = getRandomColor();
     if (i== n-1) {
       document.body.appendChild(divsOnDivsOnDivsYo[i]);
       divsOnDivsOnDivsYo[i].appendChild(divsOnDivsOnDivsYo[i-1])

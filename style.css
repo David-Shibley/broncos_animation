@@ -2,12 +2,14 @@ div {
   margin: auto;
   border: 4px solid;
   border-radius: 50%;
+  opacity: 0.988;
   transition-property: border-radius;
   transition-duration: 0.05s;
 }
 
 body {
   background-color: black;
+  background: linear-gradient(120deg, black, lightgrey)
 }
 
 /*.blue {
