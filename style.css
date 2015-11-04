@@ -1,0 +1,14 @@
+div {
+  margin: auto;
+  border-radius: 50%;
+  transition-property: border-radius;
+  transition-duration: 0.05s;
+}
+
+.blue {
+  border: 5px solid blue;
+}
+
+.orange {
+  border: 5px solid orange;
+}
